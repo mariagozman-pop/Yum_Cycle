@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            app:startDestination="@id/firstFragment">
+
+    <!-- First Fragment -->
+    <fragment
+            android:id="@+id/firstFragment"
+            android:name="com.example.yumcycle.FirstFragment"
+            android:label="First Fragment"
+            tools:layout="@layout/fragment_first">
+        <action
+                android:id="@+id/action_FirstFragment_to_SecondFragment"
+                app:destination="@id/secondFragment" />
+    </fragment>
+
+    <!-- Second Fragment -->
+    <fragment
+            android:id="@+id/secondFragment"
+            android:name="com.example.yumcycle.SecondFragment"
+            android:label="Second Fragment"
+            tools:layout="@layout/fragment_second">
+        <action
+                android:id="@+id/action_SecondFragment_to_CreateAccountFragment"
+                app:destination="@id/createAccountFragment" />
+        <action
+                android:id="@+id/action_SecondFragment_to_ChooseProductFragment"
+                app:destination="@id/chooseProductFragment" />
+    </fragment>
+
+    <!-- Create Account Fragment -->
+    <fragment
+            android:id="@+id/createAccountFragment"
+            android:name="com.example.yumcycle.ui.RegisterFragment"
+            android:label="Create Account"
+            tools:layout="@layout/fragment_register">
+        <action
+                android:id="@+id/action_CreateAccountFragment_to_ChooseProductFragment"
+                app:destination="@id/chooseProductFragment" />
+    </fragment>
+
+    <!-- Choose Product Fragment -->
+    <fragment
+            android:id="@+id/chooseProductFragment"
+            android:name="com.example.yumcycle.ui.ChooseProductFragment"
+            android:label="Choose Product"
+            tools:layout="@layout/fragment_choose_product">
+        <action
+                android:id="@+id/action_ChooseProductFragment_to_AddItemFragment"
+                app:destination="@id/addItemFragment" />
+        <action
+                android:id="@+id/action_ChooseProductFragment_to_SearchRecipesFragment"
+                app:destination="@id/searchRecipeFragment" />
+        <action
+                android:id="@+id/action_ChooseProductFragment_to_MyAccountFragment"
+                app:destination="@+id/myAccountFragment" />
+
+    </fragment>
+
+    <!-- Add Item Fragment -->
+    <fragment
+            android:id="@+id/addItemFragment"
+            android:name="com.example.yumcycle.ui.AddItemFragment"
+            android:label="Add Item"
+            tools:layout="@layout/fragment_add_item">
+        <action
+                android:id="@+id/action_AddItemFragment_to_AddItemManuallyFragment"
+                app:destination="@id/addItemManuallyFragment" />
+        <action
+                android:id="@+id/action_AddItemFragment_to_BarcodeScanningFragment"
+                app:destination="@id/barcodeScanningFragment" />
+        <action
+                android:id="@+id/action_AddItemFragment_to_InventoryListFragment"
+                app:destination="@id/inventoryListFragment" />
+        <action
+                android:id="@+id/action_AddItemFragment_to_ChooseProductFragment"
+                app:destination="@id/chooseProductFragment" />
+    </fragment>
+
+    <!-- Add Item Manually Fragment -->
+    <fragment
+            android:id="@+id/addItemManuallyFragment"
+            android:name="com.example.yumcycle.ui.AddItemManuallyFragment"
+            android:label="Add Item Manually"
+            tools:layout="@layout/fragment_add_item_manually" >
+
+        <action
+                android:id="@+id/action_AddItemManuallyFragment_to_AddItemFragment"
+                app:destination="@id/addItemFragment" />
+
+    </fragment>
+
+    <!-- Barcode Scanning Fragment -->
+    <fragment
+            android:id="@+id/barcodeScanningFragment"
+            android:name="com.example.yumcycle.ui.BarcodeScanningFragment"
+            android:label="Barcode Scanning"
+            tools:layout="@layout/fragment_barcode_scanning" >
+
+    </fragment>
+
+    <!-- Inventory List Fragment -->
+    <fragment
+            android:id="@+id/inventoryListFragment"
+            android:name="com.example.yumcycle.ui.InventoryListFragment"
+            android:label="Inventory List"
+            tools:layout="@layout/fragment_inventory_list" >
+
+        <action
+                android:id="@+id/action_InventoryListFragment_to_AddItemFragment"
+                app:destination="@id/addItemFragment" />
+
+    </fragment>
+
+    <!-- Search Recipe Fragment -->
+    <fragment
+            android:id="@+id/searchRecipeFragment"
+            android:name="com.example.yumcycle.ui.SearchRecipeFragment"
+            android:label="Search Recipe" >
+
+        <action
+                android:id="@+id/action_SearchRecipeFragment_to_ChooseProductFragment"
+                app:destination="@id/chooseProductFragment" />
+
+        <action
+                android:id="@+id/action_SearchRecipeFragment_to_RecipeDisplayFragment"
+                app:destination="@id/recipeDisplayFragment" />
+
+    </fragment>
+
+    <!-- Recipe Display Fragment -->
+    <fragment
+        android:id="@+id/recipeDisplayFragment"
+        android:name="com.example.yumcycle.ui.RecipeDisplayFragment"
+        android:label="Recipe Display" >
+
+        <action
+                android:id="@+id/action_RecipeDisplayFragment_to_SearchRecipeFragment"
+                app:destination="@id/searchRecipeFragment" />
+        <action
+                android:id="@+id/action_RecipeDisplayFragment_to_MyAccountFragment"
+                app:destination="@id/myAccountFragment" />
+
+    </fragment>
+
+    <!-- My Account Fragment -->
+    <fragment
+        android:id="@+id/myAccountFragment"
+        android:name="com.example.yumcycle.ui.MyAccountFragment"
+        android:label="My Account" />
+
+            <action
+                android:id="@+id/action_MyAccountFragment_to_ChooseProductFragment"
+                app:destination="@id/chooseProductFragment" />
+
+</navigation>

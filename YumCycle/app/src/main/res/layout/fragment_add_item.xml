@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/download">
+
+    <!-- App Title -->
+    <TextView
+            android:id="@+id/appTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YumCycle"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#4C5FA0"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true" />
+
+    <!-- Search Bar -->
+    <EditText
+            android:id="@+id/search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Search for your items"
+            android:background="@drawable/button_border"
+            android:padding="12dp"
+            android:layout_below="@id/appTitle"
+            android:layout_margin="16dp"
+            android:layout_centerHorizontal="true" />
+
+    <!-- Menu Button -->
+    <ImageView
+            android:id="@+id/menu_button"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/magnifier"
+            android:layout_alignTop="@id/search_bar"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp" />
+
+    <!-- Barcode Scanning Button -->
+    <LinearLayout
+            android:id="@+id/barcode_scanning_button"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:layout_below="@id/search_bar"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_border"
+            android:gravity="center">
+
+        <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/colorbarcode"
+                android:contentDescription="Barcode Scanning Icon" />
+
+        <TextView
+                android:id="@+id/barcode_scanning_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Barcode Scanning"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <!-- Manually Adding Button -->
+    <LinearLayout
+            android:id="@+id/manual_adding_button"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:layout_below="@id/barcode_scanning_button"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_border"
+            android:gravity="center">
+
+        <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/finger"
+                android:contentDescription="Manually Adding Icon" />
+
+        <TextView
+                android:id="@+id/manual_adding_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Manually Adding"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <!-- Log Out Button -->
+    <Button
+            android:id="@+id/logout_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log Out"
+            android:layout_below="@id/manual_adding_button"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/black"
+            android:textColor="@android:color/white" />
+
+    <ImageView
+            android:id="@+id/custom_back_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/back_button"
+            android:contentDescription="Back Button"
+            android:layout_margin="16dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+
+</RelativeLayout>

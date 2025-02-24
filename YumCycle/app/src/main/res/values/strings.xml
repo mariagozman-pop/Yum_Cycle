@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Yum Cycle</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string-array name="city_list">
+        <item>New York</item>
+        <item>Los Angeles</item>
+        <item>Chicago</item>
+        <item>Houston</item>
+        <item>Miami</item>
+    </string-array>
+
+    <string-array name="unit_array">
+        <item>grams</item>
+        <item>pieces</item>
+    </string-array>
+
+    <string name="openai_api_key">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</string>
+
+</resources>

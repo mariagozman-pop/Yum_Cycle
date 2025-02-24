@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/light_blue">
+
+    <!-- Slogan -->
+    <TextView
+            android:id="@+id/slogan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yum Cycle"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            android:textColor="@color/red"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true" />
+
+    <!-- Username EditText -->
+    <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="username"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="140dp"
+            android:layout_below="@id/slogan"
+            android:layout_centerHorizontal="true"
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp" />
+
+    <!-- Password EditText -->
+    <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_below="@id/username"
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp" />
+
+    <!-- "I am not a robot" Checkbox -->
+    <CheckBox
+            android:id="@+id/notARobot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I am not a robot."
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/password"
+            android:layout_centerHorizontal="true" />
+
+    <!-- Login Button -->
+    <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log In"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_below="@id/notARobot"
+            android:background="@color/red"
+            android:textColor="@color/white" />
+
+    <!-- Create Account Button -->
+    <TextView
+            android:id="@+id/createAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Account"
+            android:textSize="16sp"
+            android:textColor="@color/red"
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/loginButton"
+            android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/download">
+
+    <!-- App Title -->
+    <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yum Cycle"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true" />
+
+    <!-- Add Items Button -->
+    <LinearLayout
+            android:id="@+id/addItemsButton"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:layout_below="@id/titleTextView"
+            android:layout_marginTop="120dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_border"
+            android:gravity="center">
+
+        <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/button"
+                android:contentDescription="Add Items Icon" />
+
+        <TextView
+                android:id="@+id/addItemsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Your Items Here"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <!-- Search Recipes Button -->
+    <LinearLayout
+            android:id="@+id/searchRecipesButton"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:layout_below="@id/addItemsButton"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_border"
+            android:gravity="center">
+
+        <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/recipe_button"
+                android:contentDescription="Search Recipes Icon" />
+
+        <TextView
+                android:id="@+id/searchRecipesText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search For Recipes Here"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <!-- My Account Button -->
+    <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Account"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="@color/red"
+            android:textColor="@android:color/white" />
+
+</RelativeLayout>

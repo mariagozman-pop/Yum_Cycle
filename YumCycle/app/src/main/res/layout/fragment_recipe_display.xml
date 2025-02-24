@@ -1,0 +1,49 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+    <ImageView
+            android:id="@+id/custom_back_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/back_button"
+            android:contentDescription="Back Button"
+            android:layout_margin="16dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        <TextView
+                android:id="@+id/recipe_full_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical"
+                android:textSize="16sp"
+                android:lineSpacingExtra="4dp"
+                android:textColor="@color/pink"
+                android:fontFamily="sans-serif" />
+
+    </ScrollView>
+
+    <!-- Do Recipe Button -->
+    <Button
+            android:id="@+id/add_to_favorites_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Do Recipe" />
+
+    <!-- My Account Button -->
+    <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Account" />
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<!-- res/layout/fragment_my_account.xml -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/myAccountScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+    <LinearLayout
+            android:id="@+id/myAccountContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <!-- User Details Section -->
+        <TextView
+                android:id="@+id/usernameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username: "
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"/>
+
+        <TextView
+                android:id="@+id/emailTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email: "
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"/>
+
+        <!-- Favorites Section Label -->
+        <TextView
+                android:id="@+id/favoritesLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Favorite Recipes:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+        <!-- ProgressBar for Loading Indicator -->
+        <ProgressBar
+                android:id="@+id/loadingProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_gravity="center_horizontal"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_marginBottom="16dp"/>
+
+        <!-- TextView for Empty State -->
+        <TextView
+                android:id="@+id/noFavoritesTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You have no favorite recipes yet."
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"/>
+
+        <!-- Favorites Container -->
+        <LinearLayout
+                android:id="@+id/favoritesContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+
+        <ImageView
+                android:id="@+id/custom_back_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/back_button"
+                android:contentDescription="Back Button"
+                android:layout_margin="16dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true" />
+    </LinearLayout>
+</ScrollView>
